@@ -37,4 +37,22 @@
     // Use XCTAssert and related functions to verify your tests produce the correct results.
 }
 
+- (void)testPanAndSwipe {
+    
+    XCUIApplication *app = [[XCUIApplication alloc] init];
+    [[[app.tables childrenMatchingType:XCUIElementTypeCell] elementBoundByIndex:2].staticTexts[@"pan and swipe"] tap];
+    
+    XCUIElement *element = [[[[app childrenMatchingType:XCUIElementTypeWindow] elementBoundByIndex:0] childrenMatchingType:XCUIElementTypeOther].element childrenMatchingType:XCUIElementTypeOther].element;
+    [element swipeRight];
+    [element swipeDown];
+    [element swipeUp];
+    [element swipeRight];
+    [element swipeLeft];
+    [element swipeRight];
+    [element swipeLeft];
+    [element swipeRight];
+    [element swipeDown];
+    
+}
+
 @end

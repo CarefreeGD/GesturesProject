@@ -8,7 +8,7 @@
 
 #import "ScreenEdgePanViewController.h"
 
-@interface ScreenEdgePanViewController ()
+@interface ScreenEdgePanViewController ()<UIGestureRecognizerDelegate>
 
 @end
 
@@ -19,19 +19,37 @@
     // Do any additional setup after loading the view from its nib.
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)ScreenEdgePanInView:(UIScreenEdgePanGestureRecognizer *)gesture {
+    //当前被触摸的view
+    UIView *view = [self.view hitTest:[gesture locationInView:gesture.view]
+                            withEvent:nil];
+    if(UIGestureRecognizerStateBegan == gesture.state ||
+       UIGestureRecognizerStateChanged == gesture.state)
+    {
+        CGPoint translation = [gesture translationInView:gesture.view];
+        [UIView animateWithDuration:0.5 animations:^{
+            view.center = CGPointMake(self.view.center.x + translation.x, view.center.y);
+            NSLog(@"%@",NSStringFromCGPoint(view.center));
+        }];
+    }
+    else//取消，失败，结束的时候返回原处
+    {
+        [UIView animateWithDuration:0.5 animations:^{
+            view.center = CGPointMake(self.view.center.x, view.center.y);
+        }];
+    }
+    printf("%s",__func__);
+}
+- (IBAction)screenEdgePanInSubView:(id)sender {
+    printf("%s",__func__);
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer {
+    return YES;
 }
-*/
+
+- (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer {
+    return YES;
+}
 
 @end

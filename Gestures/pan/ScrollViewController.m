@@ -9,6 +9,8 @@
 #import "ScrollViewController.h"
 
 @interface ScrollViewController ()
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
+@property (strong, nonatomic) IBOutlet UIPanGestureRecognizer *pan;
 
 @end
 
@@ -17,21 +19,20 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    self.scrollView.contentSize = CGSizeMake([UIScreen mainScreen].bounds.size.width, 3003);
+    
+    NSLog(@"%@\n%@",self.scrollView.gestureRecognizers,self.scrollView.gestureRecognizers.lastObject.superclass);
+    [self.pan requireGestureRecognizerToFail:self.scrollView.gestureRecognizers.lastObject];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)didClickButton:(UIButton *)button {
+    
+}
+- (IBAction)pan:(id)sender {
+    
+    printf("%s %s \n" , __func__ , [[NSDate date].description substringWithRange:NSMakeRange(11, 8)].UTF8String);
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

@@ -1,12 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ScrollViewController">
             <connections>
+                <outlet property="pan" destination="laX-Bk-zrn" id="7TY-WU-q6q"/>
+                <outlet property="scrollView" destination="rAt-Qh-LQL" id="enH-Qi-Mxv"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -14,7 +20,29 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rAt-Qh-LQL">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <gestureRecognizers/>
+                </scrollView>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="rAt-Qh-LQL" secondAttribute="trailing" id="Jgm-Ou-CE5"/>
+                <constraint firstItem="rAt-Qh-LQL" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="d5e-H0-u7o"/>
+                <constraint firstItem="rAt-Qh-LQL" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="jy7-cP-Y3U"/>
+                <constraint firstAttribute="bottom" secondItem="rAt-Qh-LQL" secondAttribute="bottom" id="sKp-Lk-5P2"/>
+            </constraints>
+            <connections>
+                <outletCollection property="gestureRecognizers" destination="laX-Bk-zrn" appends="YES" id="w1w-cP-nrx"/>
+            </connections>
+            <point key="canvasLocation" x="-156" y="18"/>
         </view>
+        <panGestureRecognizer minimumNumberOfTouches="1" id="laX-Bk-zrn">
+            <connections>
+                <action selector="pan:" destination="-1" id="SKf-dc-Nim"/>
+                <outlet property="delegate" destination="-1" id="B60-pN-ALq"/>
+            </connections>
+        </panGestureRecognizer>
     </objects>
 </document>

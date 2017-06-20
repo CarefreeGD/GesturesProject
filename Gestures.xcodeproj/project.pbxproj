@@ -15,6 +15,27 @@
 		60CE05631EF769E500B1B2C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60CE05611EF769E500B1B2C0 /* LaunchScreen.storyboard */; };
 		60CE056E1EF769E500B1B2C0 /* GesturesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 60CE056D1EF769E500B1B2C0 /* GesturesTests.m */; };
 		60CE05791EF769E500B1B2C0 /* GesturesUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 60CE05781EF769E500B1B2C0 /* GesturesUITests.m */; };
+		60CE05901EF796D900B1B2C0 /* GesturesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60CE058E1EF796D900B1B2C0 /* GesturesViewController.m */; };
+		60CE05911EF796D900B1B2C0 /* GesturesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60CE058F1EF796D900B1B2C0 /* GesturesViewController.xib */; };
+		60CE05951EF7C31500B1B2C0 /* GesturesTestDelegateVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 60CE05931EF7C31500B1B2C0 /* GesturesTestDelegateVC.m */; };
+		60CE05961EF7C31500B1B2C0 /* GesturesTestDelegateVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60CE05941EF7C31500B1B2C0 /* GesturesTestDelegateVC.xib */; };
+		60CE059E1EF8C3A700B1B2C0 /* PanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60CE059C1EF8C3A700B1B2C0 /* PanViewController.m */; };
+		60CE059F1EF8C3A700B1B2C0 /* PanViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60CE059D1EF8C3A700B1B2C0 /* PanViewController.xib */; };
+		60CE05A41EF8D09A00B1B2C0 /* SwipeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60CE05A21EF8D09A00B1B2C0 /* SwipeViewController.m */; };
+		60CE05A51EF8D09A00B1B2C0 /* SwipeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60CE05A31EF8D09A00B1B2C0 /* SwipeViewController.xib */; };
+		60CE05AA1EF8EE5B00B1B2C0 /* LongPressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60CE05A81EF8EE5B00B1B2C0 /* LongPressViewController.m */; };
+		60CE05AB1EF8EE5B00B1B2C0 /* LongPressViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60CE05A91EF8EE5B00B1B2C0 /* LongPressViewController.xib */; };
+		60CE05AF1EF8F13F00B1B2C0 /* ScreenEdgePanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60CE05AD1EF8F13F00B1B2C0 /* ScreenEdgePanViewController.m */; };
+		60CE05B01EF8F13F00B1B2C0 /* ScreenEdgePanViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60CE05AE1EF8F13F00B1B2C0 /* ScreenEdgePanViewController.xib */; };
+		60CE05B51EF8F41400B1B2C0 /* PinchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60CE05B31EF8F41400B1B2C0 /* PinchViewController.m */; };
+		60CE05B61EF8F41400B1B2C0 /* PinchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60CE05B41EF8F41400B1B2C0 /* PinchViewController.xib */; };
+		60CE05C51EF904C000B1B2C0 /* CustomGestureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60CE05C31EF904C000B1B2C0 /* CustomGestureViewController.m */; };
+		60CE05C61EF904C000B1B2C0 /* CustomGestureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60CE05C41EF904C000B1B2C0 /* CustomGestureViewController.xib */; };
+		60CE05C91EF904DE00B1B2C0 /* CustomGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 60CE05C81EF904DE00B1B2C0 /* CustomGesture.m */; };
+		60CE05CC1EF916CB00B1B2C0 /* 手势识别过程.png in Resources */ = {isa = PBXBuildFile; fileRef = 60CE05CA1EF916CB00B1B2C0 /* 手势识别过程.png */; };
+		60CE05CD1EF916CB00B1B2C0 /* 手势汇总.png in Resources */ = {isa = PBXBuildFile; fileRef = 60CE05CB1EF916CB00B1B2C0 /* 手势汇总.png */; };
+		60CE05D61EF9204E00B1B2C0 /* ScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60CE05D41EF9204E00B1B2C0 /* ScrollViewController.m */; };
+		60CE05D71EF9204E00B1B2C0 /* ScrollViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60CE05D51EF9204E00B1B2C0 /* ScrollViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +72,37 @@
 		60CE05741EF769E500B1B2C0 /* GesturesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GesturesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		60CE05781EF769E500B1B2C0 /* GesturesUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GesturesUITests.m; sourceTree = "<group>"; };
 		60CE057A1EF769E500B1B2C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60CE058D1EF796D900B1B2C0 /* GesturesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GesturesViewController.h; sourceTree = "<group>"; };
+		60CE058E1EF796D900B1B2C0 /* GesturesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GesturesViewController.m; sourceTree = "<group>"; };
+		60CE058F1EF796D900B1B2C0 /* GesturesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GesturesViewController.xib; sourceTree = "<group>"; };
+		60CE05921EF7C31500B1B2C0 /* GesturesTestDelegateVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GesturesTestDelegateVC.h; sourceTree = "<group>"; };
+		60CE05931EF7C31500B1B2C0 /* GesturesTestDelegateVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GesturesTestDelegateVC.m; sourceTree = "<group>"; };
+		60CE05941EF7C31500B1B2C0 /* GesturesTestDelegateVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GesturesTestDelegateVC.xib; sourceTree = "<group>"; };
+		60CE059B1EF8C3A700B1B2C0 /* PanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PanViewController.h; sourceTree = "<group>"; };
+		60CE059C1EF8C3A700B1B2C0 /* PanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PanViewController.m; sourceTree = "<group>"; };
+		60CE059D1EF8C3A700B1B2C0 /* PanViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PanViewController.xib; sourceTree = "<group>"; };
+		60CE05A11EF8D09A00B1B2C0 /* SwipeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwipeViewController.h; sourceTree = "<group>"; };
+		60CE05A21EF8D09A00B1B2C0 /* SwipeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwipeViewController.m; sourceTree = "<group>"; };
+		60CE05A31EF8D09A00B1B2C0 /* SwipeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SwipeViewController.xib; sourceTree = "<group>"; };
+		60CE05A71EF8EE5B00B1B2C0 /* LongPressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LongPressViewController.h; sourceTree = "<group>"; };
+		60CE05A81EF8EE5B00B1B2C0 /* LongPressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LongPressViewController.m; sourceTree = "<group>"; };
+		60CE05A91EF8EE5B00B1B2C0 /* LongPressViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LongPressViewController.xib; sourceTree = "<group>"; };
+		60CE05AC1EF8F13F00B1B2C0 /* ScreenEdgePanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenEdgePanViewController.h; sourceTree = "<group>"; };
+		60CE05AD1EF8F13F00B1B2C0 /* ScreenEdgePanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenEdgePanViewController.m; sourceTree = "<group>"; };
+		60CE05AE1EF8F13F00B1B2C0 /* ScreenEdgePanViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScreenEdgePanViewController.xib; sourceTree = "<group>"; };
+		60CE05B21EF8F41400B1B2C0 /* PinchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinchViewController.h; sourceTree = "<group>"; };
+		60CE05B31EF8F41400B1B2C0 /* PinchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PinchViewController.m; sourceTree = "<group>"; };
+		60CE05B41EF8F41400B1B2C0 /* PinchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PinchViewController.xib; sourceTree = "<group>"; };
+		60CE05C21EF904C000B1B2C0 /* CustomGestureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomGestureViewController.h; sourceTree = "<group>"; };
+		60CE05C31EF904C000B1B2C0 /* CustomGestureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomGestureViewController.m; sourceTree = "<group>"; };
+		60CE05C41EF904C000B1B2C0 /* CustomGestureViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomGestureViewController.xib; sourceTree = "<group>"; };
+		60CE05C71EF904DE00B1B2C0 /* CustomGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomGesture.h; sourceTree = "<group>"; };
+		60CE05C81EF904DE00B1B2C0 /* CustomGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomGesture.m; sourceTree = "<group>"; };
+		60CE05CA1EF916CB00B1B2C0 /* 手势识别过程.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "手势识别过程.png"; path = "Pinch/手势识别过程.png"; sourceTree = "<group>"; };
+		60CE05CB1EF916CB00B1B2C0 /* 手势汇总.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "手势汇总.png"; path = "Pinch/手势汇总.png"; sourceTree = "<group>"; };
+		60CE05D31EF9204E00B1B2C0 /* ScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollViewController.h; sourceTree = "<group>"; };
+		60CE05D41EF9204E00B1B2C0 /* ScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollViewController.m; sourceTree = "<group>"; };
+		60CE05D51EF9204E00B1B2C0 /* ScrollViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScrollViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +153,27 @@
 		60CE05521EF769E500B1B2C0 /* Gestures */ = {
 			isa = PBXGroup;
 			children = (
+				60CE05CA1EF916CB00B1B2C0 /* 手势识别过程.png */,
+				60CE05CB1EF916CB00B1B2C0 /* 手势汇总.png */,
+				60CE05A01EF8D08A00B1B2C0 /* Swipe */,
+				60CE059A1EF8C30200B1B2C0 /* pan */,
+				60CE05A61EF8EE4F00B1B2C0 /* LongPress */,
+				60CE05B11EF8F40400B1B2C0 /* Pinch */,
 				60CE05561EF769E500B1B2C0 /* AppDelegate.h */,
 				60CE05571EF769E500B1B2C0 /* AppDelegate.m */,
 				60CE05591EF769E500B1B2C0 /* ViewController.h */,
 				60CE055A1EF769E500B1B2C0 /* ViewController.m */,
+				60CE058D1EF796D900B1B2C0 /* GesturesViewController.h */,
+				60CE058E1EF796D900B1B2C0 /* GesturesViewController.m */,
+				60CE058F1EF796D900B1B2C0 /* GesturesViewController.xib */,
+				60CE05921EF7C31500B1B2C0 /* GesturesTestDelegateVC.h */,
+				60CE05931EF7C31500B1B2C0 /* GesturesTestDelegateVC.m */,
+				60CE05941EF7C31500B1B2C0 /* GesturesTestDelegateVC.xib */,
+				60CE05C21EF904C000B1B2C0 /* CustomGestureViewController.h */,
+				60CE05C31EF904C000B1B2C0 /* CustomGestureViewController.m */,
+				60CE05C41EF904C000B1B2C0 /* CustomGestureViewController.xib */,
+				60CE05C71EF904DE00B1B2C0 /* CustomGesture.h */,
+				60CE05C81EF904DE00B1B2C0 /* CustomGesture.m */,
 				60CE055C1EF769E500B1B2C0 /* Main.storyboard */,
 				60CE055F1EF769E500B1B2C0 /* Assets.xcassets */,
 				60CE05611EF769E500B1B2C0 /* LaunchScreen.storyboard */,
@@ -138,6 +207,52 @@
 				60CE057A1EF769E500B1B2C0 /* Info.plist */,
 			);
 			path = GesturesUITests;
+			sourceTree = "<group>";
+		};
+		60CE059A1EF8C30200B1B2C0 /* pan */ = {
+			isa = PBXGroup;
+			children = (
+				60CE059B1EF8C3A700B1B2C0 /* PanViewController.h */,
+				60CE059C1EF8C3A700B1B2C0 /* PanViewController.m */,
+				60CE059D1EF8C3A700B1B2C0 /* PanViewController.xib */,
+				60CE05AC1EF8F13F00B1B2C0 /* ScreenEdgePanViewController.h */,
+				60CE05AD1EF8F13F00B1B2C0 /* ScreenEdgePanViewController.m */,
+				60CE05AE1EF8F13F00B1B2C0 /* ScreenEdgePanViewController.xib */,
+				60CE05D31EF9204E00B1B2C0 /* ScrollViewController.h */,
+				60CE05D41EF9204E00B1B2C0 /* ScrollViewController.m */,
+				60CE05D51EF9204E00B1B2C0 /* ScrollViewController.xib */,
+			);
+			path = pan;
+			sourceTree = "<group>";
+		};
+		60CE05A01EF8D08A00B1B2C0 /* Swipe */ = {
+			isa = PBXGroup;
+			children = (
+				60CE05A11EF8D09A00B1B2C0 /* SwipeViewController.h */,
+				60CE05A21EF8D09A00B1B2C0 /* SwipeViewController.m */,
+				60CE05A31EF8D09A00B1B2C0 /* SwipeViewController.xib */,
+			);
+			path = Swipe;
+			sourceTree = "<group>";
+		};
+		60CE05A61EF8EE4F00B1B2C0 /* LongPress */ = {
+			isa = PBXGroup;
+			children = (
+				60CE05A71EF8EE5B00B1B2C0 /* LongPressViewController.h */,
+				60CE05A81EF8EE5B00B1B2C0 /* LongPressViewController.m */,
+				60CE05A91EF8EE5B00B1B2C0 /* LongPressViewController.xib */,
+			);
+			path = LongPress;
+			sourceTree = "<group>";
+		};
+		60CE05B11EF8F40400B1B2C0 /* Pinch */ = {
+			isa = PBXGroup;
+			children = (
+				60CE05B21EF8F41400B1B2C0 /* PinchViewController.h */,
+				60CE05B31EF8F41400B1B2C0 /* PinchViewController.m */,
+				60CE05B41EF8F41400B1B2C0 /* PinchViewController.xib */,
+			);
+			path = Pinch;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,9 +361,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60CE05CC1EF916CB00B1B2C0 /* 手势识别过程.png in Resources */,
+				60CE059F1EF8C3A700B1B2C0 /* PanViewController.xib in Resources */,
+				60CE05B01EF8F13F00B1B2C0 /* ScreenEdgePanViewController.xib in Resources */,
+				60CE05D71EF9204E00B1B2C0 /* ScrollViewController.xib in Resources */,
 				60CE05631EF769E500B1B2C0 /* LaunchScreen.storyboard in Resources */,
+				60CE05AB1EF8EE5B00B1B2C0 /* LongPressViewController.xib in Resources */,
+				60CE05B61EF8F41400B1B2C0 /* PinchViewController.xib in Resources */,
+				60CE05911EF796D900B1B2C0 /* GesturesViewController.xib in Resources */,
 				60CE05601EF769E500B1B2C0 /* Assets.xcassets in Resources */,
+				60CE05C61EF904C000B1B2C0 /* CustomGestureViewController.xib in Resources */,
 				60CE055E1EF769E500B1B2C0 /* Main.storyboard in Resources */,
+				60CE05CD1EF916CB00B1B2C0 /* 手势汇总.png in Resources */,
+				60CE05961EF7C31500B1B2C0 /* GesturesTestDelegateVC.xib in Resources */,
+				60CE05A51EF8D09A00B1B2C0 /* SwipeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,9 +399,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60CE05C91EF904DE00B1B2C0 /* CustomGesture.m in Sources */,
+				60CE05D61EF9204E00B1B2C0 /* ScrollViewController.m in Sources */,
 				60CE055B1EF769E500B1B2C0 /* ViewController.m in Sources */,
+				60CE05B51EF8F41400B1B2C0 /* PinchViewController.m in Sources */,
+				60CE05AA1EF8EE5B00B1B2C0 /* LongPressViewController.m in Sources */,
 				60CE05581EF769E500B1B2C0 /* AppDelegate.m in Sources */,
+				60CE05C51EF904C000B1B2C0 /* CustomGestureViewController.m in Sources */,
+				60CE059E1EF8C3A700B1B2C0 /* PanViewController.m in Sources */,
+				60CE05AF1EF8F13F00B1B2C0 /* ScreenEdgePanViewController.m in Sources */,
+				60CE05951EF7C31500B1B2C0 /* GesturesTestDelegateVC.m in Sources */,
+				60CE05A41EF8D09A00B1B2C0 /* SwipeViewController.m in Sources */,
 				60CE05551EF769E500B1B2C0 /* main.m in Sources */,
+				60CE05901EF796D900B1B2C0 /* GesturesViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,6 +643,7 @@
 				60CE057F1EF769E500B1B2C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		60CE05801EF769E500B1B2C0 /* Build configuration list for PBXNativeTarget "GesturesTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +652,7 @@
 				60CE05821EF769E500B1B2C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		60CE05831EF769E500B1B2C0 /* Build configuration list for PBXNativeTarget "GesturesUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +661,7 @@
 				60CE05851EF769E500B1B2C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
